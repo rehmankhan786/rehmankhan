@@ -1,0 +1,268 @@
+body {
+    display: -webkit-box;
+    /* display: -ms-flexbox; */
+    /* display: flex; */
+    /* -webkit-box-pack: center; */
+    /* -ms-flex-pack: center; */
+    justify-content: center;
+    /* -webkit-box-align: center; */
+    /* -ms-flex-align: center; */
+    /* align-items: center; */
+    height: 100vh;
+    /* flex-direction: column; */
+    display: block;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    height: 110vh;
+    width: 100vw;
+    top: 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 7fr;
+    grid-template-columns: 2fr 7fr;
+    background-color: #57bfd1;
+    z-index: -2;
+    background-color: skyblue;
+    width: 75vw;
+    right: 0px;
+}
+
+body {
+    background: url('./src/stars.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+#contact_box {
+    height: 82vh;
+    width: 80vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    border-radius: 18px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+#contact_box::before {
+    content: "";
+    height: 82%;
+    width: 82%;
+    position: absolute;
+    background-color: white;
+    -webkit-filter: opacity(0.6);
+    filter: opacity(0.6);
+    -webkit-box-shadow: 1px 1px 5px greenyellow, 1px 1px 50px white;
+    box-shadow: 1px 1px 5px greenyellow, 1px 1px 50px white;
+    z-index: -2;
+    border-radius: 15px;
+}
+
+#cont_info {
+    display: -ms-grid;
+    display: grid;
+}
+
+#cont_my {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#my_cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 260px;
+    border-right: 8px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 300px;
+    position: relative;
+    left: -10px;
+}
+
+#my_cont .det_ico {
+    height: 30%;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+#my_cont .det_ico:hover .icons {
+    font-size: 48px;
+}
+
+#my_cont .det_ico .icons {
+    height: 100px;
+    width: 30%;
+    font-size: 35px;
+    color: green;
+    position: relative;
+    top: 15px;
+    left: 6px;
+    position: relative;
+    top: 20px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#my_cont .det_ico .det_ico_text {
+    width: 100%;
+    font-size: 15px;
+    color: green;
+    height: 50px;
+    pointer-events: none;
+}
+
+#my_map {
+    height: 240px;
+    position: relative;
+    right: 10px;
+    top: 10px;
+    border-top: 5px solid skyblue;
+    width: 290px;
+}
+
+#my_map iframe {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#my_map iframe:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border-radius: 7px;
+}
+
+form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-right: 5px solid skyblue;
+    text-align: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+form h3 {
+    border: none;
+    font-size: 2.3em;
+    color: white;
+    pointer-events: none;
+    stroke-width: 4px;
+    font-weight: bolder;
+    -webkit-text-stroke: 2px white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+}
+
+form .inp_ins {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 20%;
+    width: 100%;
+    justify-items: center;
+}
+
+form .inp_ins input {
+    height: 28px;
+    border-radius: 8px;
+    margin: 20px 15px;
+    width: 41%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+form .inp_ins input:hover,
+form .inp_ins input:focus {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+form .inp_ins textarea {
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+form button[type="submit"] {
+    border: 2px solid transparent;
+    height: 38px;
+    border-radius: 11px;
+    background-color: #75e275;
+    margin-top: 18px;
+    width: 90%;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-family: "popins";
+    -webkit-transition: all 150ms;
+    transition: all 150ms;
+}
+
+form button[type="submit"]:hover {
+    border: 2px solid #83f083;
+    background-color: #bde7bd;
+    color: green;
+    font-family: "popins";
+    letter-spacing: 1px;
+}
+
+
+/*# sourceMappingURL=index.css.map */
