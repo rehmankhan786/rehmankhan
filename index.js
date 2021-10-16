@@ -5,8 +5,9 @@ const port = process.env.PORT || 3000
 const path = require("path")
 const blogs = require("./data/blogs")
 require("./src/db/conn")
-app.use(express.urlencoded())
+app.use(express.urlencoded({ extended: false }))
 const registered = require("./src/models/model")
+const swal = require("sweetalert2")
 
 app.set("view engine", "handlebars")
 app.engine("handlebars", exphbs())
@@ -49,11 +50,11 @@ app.get("/contact", (req, res) => {
 
 })
 app.post("/contact", async(req, res) => {
-    console.log(req.body.Firstname)
-    console.log(req.body.Lastname)
-    console.log(req.body.user_email)
-    console.log(req.body.user_req)
-    console.log(req.body.user_phone)
+    // console.log(req.body.Firstname)
+    // console.log(req.body.Lastname)
+    // console.log(req.body.user_email)
+    // console.log(req.body.user_req)
+    // console.log(req.body.user_phone)
     try {
 
 
@@ -67,6 +68,8 @@ app.post("/contact", async(req, res) => {
         })
         const clients = await registered_clients.save();
         res.render("contact")
+        swal("Submitted", "Your request Has Been Submitted", "success")
+
 
     } catch (error) {
         console.log(error)

@@ -183,13 +183,29 @@ form {
 form h3 {
     border: none;
     font-size: 2.3em;
-    color: white;
+    color: transparent;
     pointer-events: none;
-    stroke-width: 4px;
+    /* stroke-width: 4px; */
     font-weight: bolder;
-    -webkit-text-stroke: 2px white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    /* -webkit-text-stroke-width: 1px; */
+    /* -webkit-text-fill-color: transparent; */
+    position: relative;
+    z-index: 4;
+    overflow: hidden;
+}
+
+form h3::before {
+    content: "Contact  Us";
+    font-size: 1.1em;
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    /* height: 100%;
+    width: 100%; */
+    color: skyblue;
+    z-index: 0;
+    font-weight: bolder;
 }
 
 form .inp_ins {
