@@ -196,7 +196,7 @@ form h3 {
 }
 
 form h3::before {
-    content: "Contact  Us";
+    /* content: "Contact  Us"; */
     font-size: 1.1em;
     position: absolute;
     top: 5px;
