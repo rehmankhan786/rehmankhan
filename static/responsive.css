@@ -1,249 +1,278 @@
-    @media screen and (max-width:800px) {
-        body {
-            background: black;
-            display: hidden;
-        }
-        #main_box #content_box #buttons a button#btn_about {
-            color: #ee627a;
-            height: 32px;
-            width: 170px;
-            right: 115px
-        }
-        #main_box #content_box #buttons a button#btn_hire {
-            width: 170px;
-            left: 60px;
-        }
-        .aboutme {
-            margin-top: 35px;
-        }
-        #main_box #content_box #my_name {
-            width: 100%;
-        }
-    }
-    
-    @media screen and (max-width:700px) {
-        form button[type="submit"] {
-            position: relative;
-            left: -11px;
-        }
-        body::before {
-            content: "";
-            position: absolute;
-            height: 110vh;
-            width: 100vw;
-            top: 0px;
-            display: -ms-grid;
-            display: grid;
-            -ms-grid-columns: 2fr 7fr;
-            grid-template-columns: 3fr 9fr;
-            background-color: #57bfd1;
-            z-index: -2;
-            background-color: skyblue;
-            width: 75vw;
-            right: 0px;
-            height: 157%;
-        }
-        #contact_box {
-            height: 82vh;
-            width: 80vw;
-            display: -ms-grid;
-            display: flex;
-            -ms-grid-columns: 2fr 1fr;
-            /* grid-template-columns: 2fr 1fr; */
-            grid-gap: 10px;
-            border-radius: 18px;
-            /* overflow: hidden; */
-            /* -webkit-box-sizing: border-box; */
-            /* box-sizing: border-box; */
-            margin: 20px auto;
-        }
-        form #h3 {
-            color: white;
-        }
-    }
-    
-    @media screen and (max-width:700px) {}
-    
-    @media screen and (max-width:700px) {
-        #main_box #content_box #my_name {
-            width: 50%;
-        }
-    }
-    
-    @media screen and (max-width:681px) {
-        #contact_box {
-            height: 82vh;
-            width: 80vw;
-            display: -ms-grid;
-            display: flex;
-            -ms-grid-columns: 2fr 1fr;
-            /* grid-template-columns: 2fr 1fr; */
-            /* grid-gap: 10px; */
-            /* border-radius: 18px; */
-            /* overflow: hidden; */
-            /* -webkit-box-sizing: border-box; */
-            /* box-sizing: border-box; */
-            margin: 20px auto;
-            flex-direction: column;
-            height: 100%;
-        }
-        #cont_my {
-            display: -ms-grid;
-            display: flex;
-            flex-direction: column;
-            /* grid-template-rows: 1fr 1fr; */
-            /* grid-gap: 10px; */
-            border: 1px solid red;
-            align-items: center;
-            /* background: white; */
-            margin-top: 47px;
-            border-radius: 14px;
-            position: relative;
-        }
-        #cont_my ::before {
-            content: "";
+   html {
+       overflow: hidden;
+   }
+   
+   body {
+       overflow: hidden;
+   }
+   
+   @media screen and (max-width:800px) {
+       #main_box #content_box #buttons a button#btn_about {
+           color: #ee627a;
+           height: 32px;
+           width: 170px;
+           right: 115px
+       }
+       #main_box #content_box #buttons a button#btn_hire {
+           width: 170px;
+           left: 60px;
+       }
+       .aboutme {
+           margin-top: 35px;
+       }
+       #main_box #content_box #my_name {
+           width: 100%;
+       }
+       form {
+           border: none;
+       }
+   }
+   
+   @media screen and (max-width:700px) {
+       form button[type="submit"] {
+           position: relative;
+           left: -11px;
+       }
+       body::before {
+           content: "";
+           position: absolute;
+           height: 110vh;
+           width: 100vw;
+           top: 0px;
+           display: -ms-grid;
+       }
+       #contact_box {
+           height: 82vh;
+           width: 80vw;
+           display: flex;
+           -ms-grid-columns: 2fr 1fr;
+           grid-gap: 10px;
+           border-radius: 18px;
+           margin: 20px auto;
+       }
+       form #h3 {
+           color: white;
+       }
+   }
+   
+   @media screen and (max-width:700px) {}
+   
+   @media screen and (max-width:700px) {
+       #main_box #content_box #my_name {
+           width: 50%;
+       }
+   }
+   
+   @media screen and (max-width:681px) {
+       #contact_box {
+           height: 82vh;
+           width: 80vw;
+           display: -ms-grid;
+           display: flex;
+           -ms-grid-columns: 2fr 1fr;
+           margin: 20px auto;
+           flex-direction: column;
+           height: 100%;
+       }
+       #cont_my {
+           display: -ms-grid;
+           display: flex;
+           flex-direction: column;
+           border: 1px solid red;
+           align-items: center;
+           margin-top: 47px;
+           border-radius: 14px;
+           position: relative;
+       }
+       #cont_my ::before {
+           /* content: "";
             height: 100%;
             width: 100%;
             background: rgba(255, 255, 255, 0.378);
-            position: absolute;
-        }
-    }
-    
-    @media screen and (max-width:616px) {
-        #main_box #content_box #my_name {
-            width: 52%;
-        }
-        .aboutme {
-            font-size: 1.2em;
-        }
-    }
-    
-    @media screen and (max-width:597px) {
-        #main_box #content_box #my_name {
-            width: 55%;
-        }
-    }
-    
-    @media screen and (max-width:564px) {
-        #main_box #content_box #my_name {
-            width: 61%;
-        }
-    }
-    
-    @media screen and (max-width:509px) {
-        #main_box #content_box #my_name {
-            width: 70%;
-        }
-        #main_box #content_box {
-            height: 90vh;
-        }
-        #main_box #content_box #buttons a button#btn_about {
-            color: #ee627a;
-            height: 32px;
-            width: 150px;
-            right: 115px
-        }
-        #main_box #content_box #buttons a button#btn_hire {
-            width: 150px;
-            left: 90px;
-        }
-    }
-    
-    @media screen and (max-width:460px) {
-        #main_box #content_box #my_name {
-            width: 74%;
-        }
-    }
-    
-    @media screen and (max-width:418px) {
-        nav {
-            width: 103%;
-        }
-        #main_box #content_box #buttons a button#btn_about {
-            color: #ee627a;
-            height: 26px;
-            width: 150px;
-            right: 130px;
-        }
-        #main_box #content_box #buttons a button#btn_hire {
-            width: 150px;
-            left: 96px;
-            height: 26px;
-        }
-        #main_box #content_box #my_name {
-            width: 78%;
-        }
-        .fa-user-shield:before {
-            content: "\f505";
-            font-size: 14px;
-        }
-        .fa-handshake:before {
-            content: "\f2b5";
-            font-size: 15px;
-        }
-    }
-    
-    @media screen and (max-width:397px) {
-        #main_box #content_box #my_name {
-            width: 83%;
-        }
-    }
-    
-    @media screen and (max-width:374px) {
-        #main_box #content_box #buttons a button#btn_about {
-            color: #ee627a;
-            height: 26px;
-            width: 130px;
-            right: 130px;
-            font-size: 18px;
-            font-weight: 500;
-        }
-        #main_box #content_box #buttons a button#btn_hire {
-            width: 130px;
-            left: 116px;
-            height: 28px;
-            font-size: 18px;
-            font-weight: 500;
-        }
-        #main_box #content_box #my_name {
-            width: 88%;
-        }
-        #main_box #content_box p {
-            color: white;
-            width: 90%;
-            font-size: 1.15em;
-            font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: lighter;
-        }
-    }
-    
-    @media screen and (max-width:352px) {
-        #main_box #content_box #my_name {
-            width: 93%;
-        }
-    }
-    
-    @media screen and (max-width:333px) {
-        #main_box #content_box #my_name {
-            width: 99%;
-        }
-        #buttons {
-            display: flex;
-            flex-direction: column;
-        }
-        #main_box #content_box #buttons a button#btn_hire {
-            width: 160px;
-            left: -12px;
-            height: 28px;
-            font-size: 18px;
-            font-weight: 500;
-        }
-        #main_box #content_box #buttons a button#btn_about {
-            color: #ee627a;
-            height: 26px;
-            width: 160px;
-            right: 14px;
-            font-size: 18px;
-            font-weight: 500;
-        }
-    }
+            position: absolute; */
+       }
+       form h3 {
+           border: none;
+           font-size: 2.3em;
+           color: transparent;
+           pointer-events: none;
+           /* stroke-width: 4px; */
+           font-weight: bolder;
+           -webkit-text-stroke: 1px white;
+           /* -webkit-text-stroke-width: 1px; */
+           /* -webkit-text-fill-color: transparent; */
+           position: relative;
+           z-index: 4;
+           overflow: hidden;
+           color: white;
+       }
+       #contact_box::before {
+           content: "";
+           height: 153%;
+           width: 100%;
+           position: absolute;
+           background-color: white;
+           -webkit-filter: opacity(0.6);
+           filter: opacity(0.6);
+           -webkit-box-shadow: 1px 1px 5px greenyellow, 1px 1px 50px white;
+           box-shadow: 1px 1px 5px greenyellow, 1px 1px 50px white;
+           z-index: -2;
+           border-radius: 15px;
+       }
+       body::before {
+           content: "";
+           position: absolute;
+           height: 110vh;
+           width: 100vw;
+           top: 0px;
+           display: -ms-grid;
+           display: grid;
+           -ms-grid-columns: 2fr 7fr;
+           grid-template-columns: 3fr 9fr;
+           background-color: #57bfd1;
+           z-index: -2;
+           background-color: skyblue;
+           width: 75vw;
+           right: 0px;
+           height: 100vh;
+       }
+   }
+   
+   @media screen and (max-width:616px) {
+       #main_box #content_box #my_name {
+           width: 52%;
+       }
+       .aboutme {
+           font-size: 1.2em;
+       }
+   }
+   
+   @media screen and (max-width:597px) {
+       #main_box #content_box #my_name {
+           width: 55%;
+       }
+   }
+   
+   @media screen and (max-width:564px) {
+       #main_box #content_box #my_name {
+           width: 61%;
+       }
+   }
+   
+   @media screen and (max-width:509px) {
+       #main_box #content_box #my_name {
+           width: 70%;
+       }
+       #main_box #content_box {
+           height: 90vh;
+       }
+       #main_box #content_box #buttons a button#btn_about {
+           color: #ee627a;
+           height: 32px;
+           width: 150px;
+           right: 115px
+       }
+       #main_box #content_box #buttons a button#btn_hire {
+           width: 150px;
+           left: 90px;
+       }
+   }
+   
+   @media screen and (max-width:460px) {
+       #main_box #content_box #my_name {
+           width: 74%;
+       }
+   }
+   
+   @media screen and (max-width:418px) {
+       nav {
+           width: 103%;
+       }
+       #main_box #content_box #buttons a button#btn_about {
+           color: #ee627a;
+           height: 26px;
+           width: 150px;
+           right: 130px;
+       }
+       #main_box #content_box #buttons a button#btn_hire {
+           width: 150px;
+           left: 96px;
+           height: 26px;
+       }
+       #main_box #content_box #my_name {
+           width: 78%;
+       }
+       .fa-user-shield:before {
+           content: "\f505";
+           font-size: 14px;
+       }
+       .fa-handshake:before {
+           content: "\f2b5";
+           font-size: 15px;
+       }
+   }
+   
+   @media screen and (max-width:397px) {
+       #main_box #content_box #my_name {
+           width: 83%;
+       }
+   }
+   
+   @media screen and (max-width:374px) {
+       #main_box #content_box #buttons a button#btn_about {
+           color: #ee627a;
+           height: 26px;
+           width: 130px;
+           right: 130px;
+           font-size: 18px;
+           font-weight: 500;
+       }
+       #main_box #content_box #buttons a button#btn_hire {
+           width: 130px;
+           left: 116px;
+           height: 28px;
+           font-size: 18px;
+           font-weight: 500;
+       }
+       #main_box #content_box #my_name {
+           width: 88%;
+       }
+       #main_box #content_box p {
+           color: white;
+           width: 90%;
+           font-size: 1.15em;
+           font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+           font-weight: lighter;
+       }
+   }
+   
+   @media screen and (max-width:352px) {
+       #main_box #content_box #my_name {
+           width: 93%;
+       }
+   }
+   
+   @media screen and (max-width:333px) {
+       #main_box #content_box #my_name {
+           width: 99%;
+       }
+       #buttons {
+           display: flex;
+           flex-direction: column;
+       }
+       #main_box #content_box #buttons a button#btn_hire {
+           width: 160px;
+           left: -12px;
+           height: 28px;
+           font-size: 18px;
+           font-weight: 500;
+       }
+       #main_box #content_box #buttons a button#btn_about {
+           color: #ee627a;
+           height: 26px;
+           width: 160px;
+           right: 14px;
+           font-size: 18px;
+           font-weight: 500;
+       }
+   }

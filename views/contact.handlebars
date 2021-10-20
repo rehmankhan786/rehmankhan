@@ -13,22 +13,22 @@
 <div id="contact_box">
 
     <div id="cont_info">
-        <form action="/contact" method="POST">
+        <form action="/contact" method="POST" id="m_form" onsubmit="alerter()">
             <h3 id="form_h3">CONTACT &nbsp; US</h3>
 
             <div class="inp_ins">
                 <input type="text" name="Firstname" id=""
-                 placeholder="First Name">
-                <input type="text" placeholder="Last Name" 
+                 placeholder="First Name" class="input_class">
+                <input type="text" class="input_class"placeholder="Last Name" 
                 name="Lastname" id="">
             </div>
             <div class="inp_ins">
-                <input type="email" placeholder="Email"
+                <input type="email" class="input_class" placeholder="Email"
                  name="user_email" id="">
-                <input type="tel" placeholder="Phone Number" name="user_phone" id="">
+                <input type="tel" class="input_class"placeholder="Phone Number" name="user_phone" id="">
             </div>
             <div class="inp_ins">
-                <textarea name="user_req" placeholder="Enter your Message Here..." id="" cols="30" rows="10"></textarea>
+                <textarea class="input_class" name="user_req" placeholder="Enter your Message Here..." id="" cols="30" rows="10"></textarea>
             </div>
 
 
@@ -70,3 +70,9 @@
 
 
 </div>
+<script>
+const alerter = (e)=>{
+    e.preventDefault()
+}
+
+</script>

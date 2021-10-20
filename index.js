@@ -67,8 +67,11 @@ app.post("/contact", async(req, res) => {
 
         })
         const clients = await registered_clients.save();
+        const alerter = () => {
+            swal("Submitted", "Your request Has Been Submitted", "success")
+        }
+        alerter()
         res.render("contact")
-        swal("Submitted", "Your request Has Been Submitted", "success")
 
 
     } catch (error) {
