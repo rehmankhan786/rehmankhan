@@ -59,16 +59,15 @@ app.post("/contact", async(req, res) => {
 
 
         const registered_clients = new registered({
-            user_first_name: req.body.Firstname,
-            user_last_name: req.body.Lastname,
-            user_email: req.body.user_email,
-            user_requirements: req.body.user_req,
-            user_phone_number: req.body.user_phone,
+            user_name: req.body.username,
+            user_email: req.body.useremail,
+            user_requirements: req.body.userreq,
+            user_phone_number: req.body.usernumber,
 
         })
         const clients = await registered_clients.save();
         const alerter = () => {
-            swal("Submitted", "Your request Has Been Submitted", "success")
+            new swal("Submitted", "Your request Has Been Submitted", "success")
         }
         alerter()
         res.render("contact")

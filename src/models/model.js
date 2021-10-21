@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 
 const register = new mongoose.Schema({
-    user_first_name: {
+    user_name: {
         type: String,
 
     },
@@ -9,10 +9,7 @@ const register = new mongoose.Schema({
         type: String,
 
     },
-    user_last_name: {
-        type: String,
 
-    },
     user_phone_number: {
         type: String,
 
